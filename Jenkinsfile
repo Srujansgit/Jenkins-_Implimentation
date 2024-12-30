@@ -7,7 +7,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Clone the repository
-                git branch: 'main', url: 'git@github.com:<username>/<repo>.git', credentialsId: env.GIT_CREDENTIALS_ID
+                git branch: 'main', url: 'git@github.com:Srujansgit/Jenkins_Implimentation', credentialsId: env.GIT_CREDENTIALS_ID
             }
         }
         stage('Build Docker Image') {
